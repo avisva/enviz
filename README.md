@@ -47,7 +47,7 @@ Enviz Technologies specializes in enterprise software solutions, cloud computing
 
 ## 📄 License
 
-© 2025 Enviz Technologies. All rights reserved.
+© 2026 Enviz Technologies. All rights reserved.
 
 ## 🤝 Contributing
 
