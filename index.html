@@ -217,18 +217,32 @@
         }
 
         .logo-text {
-            font-size: 1.4rem;
+            display: inline-flex;
+            align-items: baseline;
+            gap: 0.35rem;
             font-weight: 1000;
+            white-space: nowrap;
+            transition: font-size .4s ease;
+        }
+
+        .logo-main {
+            font-size: 1.4rem;
             background: var(--gradient);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: -.02em;
-            transition: font-size .4s ease
         }
 
-        nav.scrolled .logo-text {
-            font-size: 1rem
+        .logo-sub {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: rgba(79, 70, 229, 0.95);
+            text-transform: capitalize;
+        }
+
+        nav.scrolled .logo-main {
+            font-size: 1rem;
         }
 
         nav ul {
@@ -981,6 +995,18 @@
                 display: block
             }
 
+            .logo-wrapper {
+                gap: 0.25rem;
+            }
+
+            .logo-main {
+                font-size: 1.1rem;
+            }
+
+            .logo-sub {
+                font-size: 0.75rem;
+            }
+
             .hero-text h1 {
                 font-size: 2.2rem
             }
@@ -1007,8 +1033,7 @@
     </div><!-- Navigation -->
     <nav id="navbar">
         <div class="container">
-            <div class="logo-wrapper"><img src="enviz-logo.png" alt="enviz" class="logo-img"> <span
-                    class="logo-text">enviz technologies</span><span class="tagline"><br>envisioning smartech...</span>
+            <div class="logo-wrapper"><img src="enviz-logo.png" alt="enviz" class="logo-img"> <span class="logo-text"><span class="logo-main">enviz</span> <span class="logo-sub">technologies</span></span> <span class="tagline"><br>envisioning smartech...</span>
             </div><button class="mobile-menu" id="mobile-menu">☰</button>
             <ul>
                 <li><a href="#home">Home</a></li>
